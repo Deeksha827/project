@@ -1,0 +1,68 @@
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, 'Open Sans', sans-serif;
+}
+
+.box {
+    border: 1px solid lightgray;
+    width: 80%;
+    max-width: 340px;
+    padding: 20px;
+    margin: 30px auto;
+    border-radius: 14px;
+}
+
+ 
+.login {
+    width: 100%;
+    text-align: center;
+    margin: 40px auto;
+    position: relative;
+}
+
+.input {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 12px;
+    box-sizing: border-box;
+    font-size: 16px;
+    border: 1px solid gray;
+}
+
+.login-btn {
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 13px;
+    border: none;
+    font-size: 16px;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+    margin-top: -8px;
+    margin-bottom: 10px;
+}
+
+ 
+.forgot-password {
+    text-align: right;
+    font-size: 6px;
+     
+}
+
+/* Flexbox utility */
+.flexbox {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+ 
+
+.text {
+    padding: 10px;
+    border-top: 1px solid lightgray;
+}

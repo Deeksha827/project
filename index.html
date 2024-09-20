@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+     
+</head>
+<body>
+
+    
+
+
+   <div class="box"> 
+    <div class="login">
+         <img src="data:image/png;base64,iVBORw0KGgo..." alt="" class="logo">
+         <h1>Login</h1>
+         <h2>Welcome back!</h2> <!-- Fixed the typo 'Welocome' -->
+         
+         <input type="text" id="username" class="input" placeholder="Enter Username">
+         <p id="nameError" class="error"></p>
+         
+         <input type="password" id="password" class="input" placeholder="Enter Password">
+         <p id="passwordError" class="error"></p>
+         
+         <button class="login-btn" onclick="validateForm()">Login Now</button>
+         <div class="forgot-password">
+            <h1>Forgot Password</h1>
+             
+        </div>
+        <p>Don't have an account? SignUp</p>
+     </div>
+      
+    
+ </div>
+  
+ 
+<script>
+    function validateForm() {
+    // Get input values
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+
+    let isValid = true;
+
+    // Validate Username (no numbers allowed)
+    const nameRegex = /^[A-Za-z]+$/;
+    if (!nameRegex.test(username)) {
+        document.getElementById('nameError').textContent = 'Invalid name. Only letters are allowed.';
+        isValid = false;
+    } else {
+        document.getElementById('nameError').textContent = ''; // Clear error message
+    }
+
+    // Validate Password (minimum 8 characters)
+    if (password.length < 8) {
+        document.getElementById('passwordError').textContent = 'Password must be at least 8 characters long.';
+        isValid = false;
+    } else {
+        document.getElementById('passwordError').textContent = ''; // Clear error message
+    }
+
+    // If the form is valid, you can proceed with the submission
+    if (isValid) {
+        alert('Form submitted successfully!');
+        // You can replace the alert with actual form submission
+    }
+}
+
+</script>
+</body>
+</html>
+
+
+
+ 
